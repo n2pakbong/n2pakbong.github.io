@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: front
 title: "Home"
 ---
 <style>
-/* Hide the big title Minima prints for pages */
-.post-title {
-  display: none;
+/* Reduce the default vertical gap under the navbar on the front page */
+.layout-front .page-content {
+  padding-top: 0.75rem;
 }
 </style>
 
