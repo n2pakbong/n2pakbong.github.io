@@ -4,9 +4,9 @@ title: "Home"
 ---
 
 <style>
-/* Make the page title left-aligned instead of centered */
+/* Hide the big "Home" heading on this page only */
 .page-title {
-  text-align: left;
+  display: none;
 }
 </style>
 
