@@ -2,8 +2,12 @@ title: "Nathanael Tepakbong"
 description: "Statistical Machine Learning and Numerical PDEs"
 email: "ntepakbong@outlook.com"
 
-# This tells GitHub Pages to use the Minima theme
-theme: minima
+# Use latest Minima via remote_theme (NOT the old GitHub Pages gem)
+# theme: minima
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-remote-theme
 
 # Dark-only skin
 minima:
@@ -23,4 +27,4 @@ defaults:
       type: "posts"
     values:
       layout: post
-      comments: true   # enable comments on posts (we’ll wire them later)
+      comments: true
