@@ -31,3 +31,6 @@ defaults:
 
 disqus:
   shortname: "dummy-for-giscus"
+
+include:
+  - _pages
