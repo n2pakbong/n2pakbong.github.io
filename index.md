@@ -2,10 +2,9 @@
 layout: page
 title: "Home"
 ---
-
 <style>
-/* Hide the big "Home" heading on this page only */
-.page-title {
+/* Hide the big title Minima prints for pages */
+.post-title {
   display: none;
 }
 </style>
