@@ -34,3 +34,7 @@ disqus:
 
 include:
   - _pages
+
+header_pages:
+  - index.md
+  - _pages/blog.md
