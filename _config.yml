@@ -12,6 +12,9 @@ plugins:
 # Dark-only skin
 minima:
   skin: dark
+  nav_pages:
+    - index.md
+    - _pages/blog.md
 
 # Basic URL settings (GitHub Pages will serve at this URL)
 url: "https://n2pakbong.github.io"
@@ -34,7 +37,3 @@ disqus:
 
 include:
   - _pages
-
-header_pages:
-  - index.md
-  - _pages/blog.md
