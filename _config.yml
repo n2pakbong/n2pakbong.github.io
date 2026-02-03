@@ -1,0 +1,26 @@
+title: "Nathanael Tepakbong"
+description: "Statistical Machine Learning and Numerical PDEs"
+email: "ntepakbong@outlook.com"
+
+# This tells GitHub Pages to use the Minima theme
+theme: minima
+
+# Dark-only skin
+minima:
+  skin: dark
+
+# Basic URL settings (GitHub Pages will serve at this URL)
+url: "https://n2pakbong.github.io"
+baseurl: ""
+
+# Where posts live
+permalink: /blog/:year/:month/:day/:title/
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true   # enable comments on posts (we’ll wire them later)
