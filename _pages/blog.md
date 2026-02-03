@@ -5,11 +5,11 @@ permalink: /blog/
 ---
 
 <ul>
-  {% raw %}{% for post in site.posts %}{% endraw %}
+  {% for post in site.posts %}
     <li>
       <span>{{ post.date | date: "%Y-%m-%d" }}</span>
       &nbsp;—&nbsp;
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
-  {% raw %}{% endfor %}{% endraw %}
+  {% endfor %}
 </ul>
