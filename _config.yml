@@ -28,3 +28,6 @@ defaults:
     values:
       layout: post
       comments: true
+
+disqus:
+  shortname: "dummy-for-giscus"
