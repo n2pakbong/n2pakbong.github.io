@@ -14,6 +14,10 @@ minima:
   skin: dark
   nav_pages:
     - index.md
+    - _pages/research.md
+    - _pages/publications.md
+    - _pages/teaching.md
+    - _pages/cv.md
     - _pages/blog.md
 
 # Basic URL settings (GitHub Pages will serve at this URL)
