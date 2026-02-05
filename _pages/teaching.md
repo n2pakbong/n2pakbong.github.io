@@ -4,22 +4,21 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-## Teaching experience
+## Teaching
 
-### Course Title (Institution), Term Year
-Role: Teaching assistant / Instructor  
-Responsibilities:
-- Bullet points of what you did (tutorials, grading, office hours, etc.)
+### Teaching Assistant
 
-### Another Course (Institution), Term Year
-Role: Teaching assistant / Instructor  
-Responsibilities:
-- ...
+- **SDSC2002 – Convex Optimization**  
+  Semester B 2025–26
 
-## Mentoring
+- **SDSC5003 – Storing and Retrieving Data**  
+  Semester A 2025–26
 
-- Briefly list any students you’ve supervised or mentored, if applicable.
+- **SDSC2002 – Convex Optimization**  
+  Semester B 2024–25
 
-## Teaching materials
+- **SDSC3006 – Foundations of Machine Learning**  
+  Semester A 2023–24
 
-- [Link to notes or slides](#) (if you want to make these public later)
+- **SDSC2002 – Convex Optimization**  
+  Semester B 2023–24
