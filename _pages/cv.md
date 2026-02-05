@@ -8,7 +8,7 @@ You can download my CV as a PDF:
 
 - [Download CV](/assets/cv/resume.pdf) <!-- replace # with the actual PDF path, e.g. /assets/cv/tepakbong_cv.pdf -->
 
----
+<!---
 
 ## Short version
 
