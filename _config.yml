@@ -19,6 +19,7 @@ minima:
     - _pages/teaching.md
     - _pages/cv.md
     - _pages/blog.md
+  hide_site_feed_link: true
 
 # Basic URL settings (GitHub Pages will serve at this URL)
 url: "https://n2pakbong.github.io"
