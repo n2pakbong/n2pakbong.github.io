@@ -38,7 +38,7 @@ defaults:
       comments: true
 
 disqus:
-  shortname: "dummy-for-giscus"
+  shortname: "n2pakbong"
 
 include:
   - _pages
