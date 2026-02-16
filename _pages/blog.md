@@ -3,8 +3,10 @@ layout: section
 title: "Blog"
 permalink: /blog/
 ---
-# Musings of a weak learner
-_Mathematics, Machine Learning, and other random thoughts._
+<div class="blog-hero">
+  <h1>Musings of a Weak Learner</h1>
+  <h2>Mathematics, Machine Learning, and other random thoughts.</h2>
+</div>
 <ul>
   {% for post in site.posts %}
     <li>
