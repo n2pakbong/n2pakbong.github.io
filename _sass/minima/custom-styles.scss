@@ -1,0 +1,22 @@
+.blog-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-hero h1 {
+  font-size: 3rem;         /* big main title */
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+
+  /* gradient text color */
+  background: linear-gradient(90deg, #ff6b6b, #f8e473, #4ecdc4, #1a535c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.blog-hero h2 {
+  font-size: 1.5rem;       /* big, but smaller than h1 */
+  font-style: italic;
+  margin: 0;
+  color: #cccccc;          /* works with the dark skin */
+}
