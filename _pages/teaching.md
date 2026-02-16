@@ -6,7 +6,7 @@ permalink: /teaching/
 
 ## Teaching
 
-### Teaching Assistant
+I've been a Teaching Assistant for the following courses:
 
 - **SDSC2002 – Convex Optimization**  
   Semester B 2025–26
