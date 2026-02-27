@@ -53,38 +53,17 @@ One option is to simply reject the very *existence* of those astronomically larg
 I do not pretend to take a stance on this philosophical matter (on which my understanding is way too shallow anyway), but rather propose another way to resolve this uncomfortable dilemma, which encompasses the same idea but does not require rebuilding the whole foundations of mathematics. The idea is simply to assume that there exists a [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) $P$ on the set $\mathbb N_0$ of natural numbers $\{0,1,2,\ldots\}$, which to each natural number $n\in \mathbb N$ assigns a probability $P(n) := p_n$, which morally represents the likelihood that a person encounters said number at any point in their life (be it when paying bills, counting the number of clouds in the sky, writing down a phone number, reading the temperatures of the weather forecast...). Surely, such a probability distribution will vary (a lot) from person to person, and through location and time, but the point is to assume that such a probability distribution exists (which of course is nothing but a [useful model](https://en.wikipedia.org/wiki/All_models_are_wrong)).
 
 If we are willing to accept this model of reality, then, $P$ being a probability distribution, it has to satisfy the following two properties:
-  - $P(n)\ge 0$ for all $n\in \mathbb N$, and
-  - $\sum_{n\in\mathbb N_0} P(n) = 1 $.
+  - $P(n)\ge 0$ for all $n\in \mathbb N_0$, and
+  - $\sum_{n\in\mathbb N_0} P(n) = 1 $.  
 The first bullet point just says that any number must have a probability greater or equal to zero of being observed (but the probability can not be negative), while the second and most crucial point tells us that the sum of the probabilities assigned to each number must be equal to one. That is to say, if we observe any number sampled from this probability distribution, it has to be an element of the set $\{0, 1, 2, \ldots\}$. From these two bullet points (in fact, just the second bullet point), [we can show](https://math.stackexchange.com/questions/107961/if-a-series-converges-then-the-sequence-of-terms-converges-to-0) that the following is true:
 $$\lim_{n\to\infty} P(n) = 0,$$
 that is to say, *larger and larger numbers have probabilities converging to zero*. Said in other words, if we accept this "probability distribution model", then the incomprehensibly huge numbers such as $2^{10^{10}}$, [$A(5,5)$](https://en.wikipedia.org/wiki/Ackermann_function), [$\Sigma(8)$](https://en.wikipedia.org/wiki/Busy_beaver#Lower_bounds) and the likes are still allowed to exist, but become *statistically insignificant*, which matches our idea that those numbers are *anomalies* outside the realm of "physical reality".
 
+This probabilistic viewpoint on reality is naturally related (and in fact, inspired by) the [Solomonoff induction principle](https://en.wikipedia.org/wiki/Algorithmic_probability) and [Occam's razor](https://en.wikipedia.org/wiki/Occam's_razor). Morally speaking, the idea of these theories is to assign to (scientific) theories $T$ which explain some given observations a probability proportional to $2^{-L(T)}$, where $L(T)$ is the "length" of the theory $T$ (measured, e.g., in bits). This naturally gives higher credence to simpler theories, by virtue of [Bayes' rule](https://en.wikipedia.org/wiki/Bayes'_theorem#Statement_of_theorem), and corresponds to the Occam's razor principle: *"of two competing theories, the simpler explanation of an entity is to be preferred."*. Here in our example with large numbers, we likewise give decreasing probabilities to numbers as their size increases. This gives a simple way to *statistically reject* gargantuan numbers while keeping the foundations of mathematics untouched.
 
-    - Ça permet de dire :
-      - « oui, il y a une infinité de nombres plus grands que Graham’s number »,
-      - mais « la probabilité d’en rencontrer un dans une situation réaliste est pratiquement nulle ».
-  - Lien avec le rasoir d’Ockham (version bayésienne)
-    - Rappel :
-      - le rasoir d’Ockham (en version bayésienne) recommande de donner des **probabilités a priori faibles** aux hypothèses plus complexes.
-    - L’analogie ici :
-      - les nombres très grands / compliqués représentent des « hypothèses » plus complexes.
-      - leur attribuer une probabilité faible est cohérent avec cette philosophie bayésienne.
-    - Tu peux expliciter un peu :
-      - plus la description d’un nombre est longue / compliquée, plus sa probabilité a priori devrait être petite.
-- Conclusion de la section (à écrire)
-  - Idée générale à transmettre :
-    - Cette vision probabiliste te permet de faire la paix avec :
-      - l’existence de l’infini,
-      - l’existence de nombres *ridiculement* grands,
-      - tout en restant en accord avec l’intuition qu’« on ne les verra jamais » dans la pratique.
-    - Elle offre une troisième voie entre :
-      - accepter naïvement tous les grands nombres comme « aussi concrets » que 42,
-      - et les rejeter purement et simplement à la manière ultrafinitiste.
-  - **TODO** : trouver une phrase / un paragraphe de conclusion qui te convient.
+## References and resources
 
----
 
-## 4. Some related reading
 
 - Branches des maths / infos sur les **fonctions qui croissent très vite**
   - Fonctions qui « croissent tellement vite qu’elles ne sont même plus calculables ».
