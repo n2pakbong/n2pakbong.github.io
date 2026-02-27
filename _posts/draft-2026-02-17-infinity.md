@@ -61,38 +61,15 @@ that is to say, *larger and larger numbers have probabilities converging to zero
 
 This probabilistic viewpoint on reality is naturally related (and in fact, inspired by) the [Solomonoff induction principle](https://en.wikipedia.org/wiki/Algorithmic_probability) and [Occam's razor](https://en.wikipedia.org/wiki/Occam's_razor). Morally speaking, the idea of these theories is to assign to (scientific) theories $T$ which explain some given observations a probability proportional to $2^{-L(T)}$, where $L(T)$ is the "length" of the theory $T$ (measured, e.g., in bits). This naturally gives higher credence to simpler theories, by virtue of [Bayes' rule](https://en.wikipedia.org/wiki/Bayes'_theorem#Statement_of_theorem), and corresponds to the Occam's razor principle: *"of two competing theories, the simpler explanation of an entity is to be preferred."*. Here in our example with large numbers, we likewise give decreasing probabilities to numbers as their size increases. This gives a simple way to *statistically reject* gargantuan numbers while keeping the foundations of mathematics untouched.
 
-## References and resources
+## References and additional resources
 
-
-
-- Branches des maths / infos sur les **fonctions qui croissent très vite**
-  - Fonctions qui « croissent tellement vite qu’elles ne sont même plus calculables ».
-    - ex. Busy Beaver function,
-    - fast-growing hierarchy,
-    - Goodstein sequences,
-    - hydra games, etc.
-  - Comment ces exemples illustrent :
-    - la notion de croissance « au-delà » du calculable,
-    - l’apparition de nombres encore plus gigantesques que ceux issus de la série harmonique.
-- Distributions de probabilité sur \(\mathbb{N}\)
-  - Types d’exemples possibles à mentionner :
-    - lois géométriques,
-    - lois décroissantes du type \(P(n) \propto 1/n^2\),
-    - distributions inspirées de la théorie de l’information algorithmique (Solomonoff prior, etc.).
-  - Comment ces lois peuvent modéliser (au moins grossièrement) :
-    - la fréquence d’apparition des nombres dans les problèmes, les mesures, le langage, etc.
-- Ressources populaires sur les **very large numbers**
-  - Vidéos YouTube et billets de blogs sur :
-    - Graham’s number,
-    - TREE(3),
-    - autres constructions classiques de nombres énormes.
-  - Tu peux lister des liens sympas :
-    - articles de blogs (par ex. *What’s New?*, *Libres pensées d’un mathématicien ordinaire*, etc. si pertinents),
-    - vidéos de vulgarisation sur les grands nombres,
-    - éventuellement des articles plus techniques pour lecteurs motivés.
-- Liens avec la philosophie des maths / ultrafinitisme
-  - Quelques références d’intro sur :
-    - le finitisme,
-    - l’ultra-finitisme,
-    - débats sur l’existence des grands nombres / de l’infini,
-    - pour les lecteurs qui voudraient aller plus loin côté philosophie.
+- Kifowit, Steven J., and Terra A. Stamps. "The Harmonic Series Diverges Again and Again." AMATYC Review 27.2 (2006): 31-43.
+- Kifowit, Steven J. "More proofs of divergence of the harmonic series." Unpublished article available at http://skifowit. prairiestate. edu (2006).
+- Adelman, Omer. "Σ∞: A Micro-Lesson on Probability and Symmetry." The American Mathematical Monthly 114.9 (2007): 809-810.
+- Lê Nguyên Hoang, El Mahdi EL, et al. La formule du savoir: Une philosophie unifiée du savoir fondée sur le théorème de Bayes. EDP Sciences, 2018.
+- "Ultrafinitism" Wikipedia entry https://en.wikipedia.org/wiki/Ultrafinitism
+- "Constructivism" Wikipedia entry https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_mathematics)
+- "Solomonoff's theory of inductive inference" Wikipedia entry https://en.wikipedia.org/wiki/Solomonoff's_theory_of_inductive_inference
+- El Jj. "Le plus grand de tous les nombres ?! - Deux (deux ?) minutes pour..." Youtube video https://www.youtube.com/watch?v=e6uLDvUUs8A
+- El Jj. "Un googol de secondes" Youtube video https://www.youtube.com/shorts/DMH19ihV2Us
+- Science4All. "Les nombres archi-méga-super géants | Infini 1" Youtube video https://www.youtube.com/watch?v=TVJw_pTMxiI
