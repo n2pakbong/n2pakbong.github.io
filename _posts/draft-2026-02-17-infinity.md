@@ -23,52 +23,26 @@ So then, how do we make sense of the divergence of the Harmonic Series, and how 
 $$H_N \ge \int_1^{N+1} \frac{dx}{x} \ge \log N, \tag3 $$
 where $\log$ denotes the [natural logarithm](https://en.wikipedia.org/wiki/Natural_logarithm). Hence from Equation $(3)$ we can see that $H_N$ grows like the logarithm of $N$, which indeed grows unboundedly with $N$. Better yet, by the same argument used to obtain $(3)$, we can show that $H_N \le \log N + \gamma $, where $\gamma > 0$ is a [constant](https://en.wikipedia.org/wiki/Euler's_constant) independent of $N$. So now, we know that the Harmonic series diverges, and it does so at a logarithmic speed. We can thus answer the question: for a given number $M$, how many terms $N$ do we need in the sum $H_N$ for it to be larger than $M$? Well, since we've shown that $H_N \approx \log N$, it follows that we can take $N$ such that $ \log N \ge M$ to reach our desired target $M$, which after applying the [exponential](https://en.wikipedia.org/wiki/Exponential_function), tells us that roughly $N\approx \exp(M)$ terms are enough to get $H_N \ge M$.
 
-## 2. Astronomically large numbers
+## 2. From a slowly diverging series to astronomically large numbers
 
-- Contexte perso
-  - Une des premières choses qui t’ont fasciné quand tu as commencé les maths (en prépa, *ahlala…*).
-  - Thème général : **l’infini**.
-  - Focus plus précis : *how large can numbers get*.
-  - Tu ne prétends pas « réinventer l’eau chaude » :
-    - but : partager des idées intéressantes.
-    - ce n’est pas un livre, juste un billet avec quelques réflexions sur l’infini, les *super large numbers*, etc.
-- Ouverture (brouillon que tu peux réécrire à ta sauce)
-  - > To kick off the launch of this blog, I really wanted to talk about one of the things that fascinated me the most when I started learning as a student in *classe préparatoire*: infinity.
-  - > More specifically, about how large numbers can get (and no, I will not talk about the **law of large numbers** here – though I might in the future with probability close to 1).
-- Transition vers la série harmonique
-  - Introduire rapidement la **série harmonique** :
-    - Définition de la série / des sommes partielles :
-      \[
-      H_N = \sum_{n=1}^N \frac{1}{n}, \qquad \text{et} \qquad H_\infty = \sum_{n=1}^\infty \frac{1}{n}.
-      \]
-    - Expliquer le côté « inoffensif » de la série :
-      - les termes deviennent très petits,
-      - puis « tellement minuscules » qu’ils ont l’air de ne rien apporter.
-  - Fait principal :
-    - La série harmonique **diverge vers l’infini**.
-      - Pour tout \(M > 0\), il existe \(N\) tel que \(H_N > M\).
-    - C’est **monstrueusement contre-intuitif** pour le « toi du passé » :
-      - *comment* une somme de nombres « presque nuls » peut-elle grimper jusqu’à dépasser n’importe quel nombre, aussi grand soit-il ?
-- Multiplicité des preuves
-  - Mention explicite :
-    - Il existe **beaucoup** de preuves de la divergence de la série harmonique.
-    - Tu peux citer / lister rapidement quelques types de preuves (sans les détailler) :
-      - arguments par regroupement des termes,
-      - comparaison avec une intégrale,
-      - preuves combinatoires,
-      - etc.
-- Encadrement par le logarithme et comparaison somme–intégrale
-  - Utiliser la comparaison somme–intégrale pour une fonction monotone (ici \(1/x\)) :
-    - Rappel du principe général (si f décroissante, alors somme entre intégrales successives, etc.).
-    - Obtenir un encadrement du type :
-      \[
-      \ln N \le H_N \le \ln N + C
-      \]
-      pour un certain \(C\) (par exemple \(C = 1\) ou \(C = 1 + \gamma\)).
-  - Insister :
-    - La borne inférieure logarithmique montre déjà que \(H_N \to \infty\).
-    - C’est une **divergence extrêmement lente** (logarithmique).
+Now that we have some quantitative understanding of why and how the harmonic series diverges to infinity, we can make sense out of why the statement *the harmonic series diverges* may seem so counter-intuitive (to my younger self, at least).
 
+### Mining some "harmonic bitcoin"
+
+Let's do a thought experiment. Imagine we're mining a virtual currency, akin to bitcoin, which works as follows: for every unit of computational resource we use, we are able to compute an additional term of the harmonic series, and we get paid in (Hong Kong) dollars the total sum we have been able to compute. In words, if we have $N=10$ units of computational resources, we can compute the harmonic series up to $1 + 1/2 + \ldots + 1/10 $, and we thus get paid $1 + 1/2 + \ldots + 1/10 \approx 3$ HK\$ for this computational work. Now, how much computational resources would we need to earn 200HK\$ this way? Well, as we've seen in the previous section, it takes roughly $N\approx\exp(200)$ terms for the first $N$ terms of the harmonic series to be larger than $200$. So we would need approximately $N = 7\times 10^86$ (that's a seven with *86 zeroes* after it) units of computational resources to earn 200 dollars! For the record, experts estimate that [the number of atoms in the observable universe is around $10^80$](https://en.wikipedia.org/wiki/Observable_universe#Matter_content%E2%80%94number_of_atoms). Said differently, this means that even if we could magically turn *every single atom of the universe* into a computational unit solely dedicated to our harmonic bitcoin mining objective, we would still need about *a million copies* of the universe to earn 200 dollars!
+
+### Saving up on a mortgage 
+
+Another amusing thought experiment which conveys the same idea is the following: we start a timer at time $T_0=0s$, and every second after that, an amount $1/j$ $ is deposited to our bank account by a (kind, wealthy, and immortal) stranger, where $j$ is the current second. Said differently, at time $T=1s$, we receive 1\$, at time $T=2s$, we receive 1/2\$, and so on, such that after $N$ seconds, our bank account has received $H_N \approx \log N$ HK\$. How long do we need to wait to have received 10\$, 20\$, or \50$? Running the same computations as before, we find that it would take respectively $2.2\times 10^4s\approx$ 6 hours to earn 10\$, $4.8\times 10^8s\approx$ 15 *years* to earn 20\$, and $5.2\times 10^21s\approx 1.6 \times 10^14$ *years* to earn 50\$. For the record, this last one is about [*ten thousand times* greater than the age of the universe](https://81018.com/universeclock/). So yeah, we're not buying a house anytime soon.
+
+### Ubiquity of large numbers in mathematics
+
+Thought experiments like the two above (and many more variants) explain why the divergence of the harmonic series feels like such a counterintuitive fact: the series diverges so slowly that we have no way, within the space and time scales of our universe, to "witness" it reaching those arbitrarily large values. To us, this divergence to infinity, while true in theory, is not physically observable. Slowly (or, viewed conversely, rapidly growing) quantities, such as $\log$ and $\exp$, which lead to the consideration of these "unphysical" are however far being mere curiosities or thought experiments. Indeed, such objects arise naturally to answer deep and important questions in a lot of mathematical subfields. Here are a few examples that I like:
+- The partial sum of reciprocals of prime numbers $\sum_{p \le x, p\text{prime}} \frac1p $ is [known](https://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes) to grow at a rate of $\log\log x$. That is a whole order of magnitude *slower* than $\log$.
+- The function $x\mapsto\log\log x$ famously appears in [the law of the iterated logarithm](https://en.wikipedia.org/wiki/Law_of_the_iterated_logarithm) which quantifies the fluctuations of a scaled random walk. 
+- The [Moment Generating Function](https://en.wikipedia.org/wiki/Moment-generating_function) of a Poisson random variable with parameter $\lambda > 0$ is given by the function $f:t\mapsto e^{\lambda(\exp(t) - 1)}$. That is *exponentially faster* growth than the function $\exp$!
+
+And these examples do not even remotely scratch the surface of the
 ---
 
 ## 2. How to “reconcile” this fact with my intuition?  
