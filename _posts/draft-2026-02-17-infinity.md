@@ -1,7 +1,29 @@
-<!-- Optional short subtitle / tagline -->
-<!-- e.g. "Infinity, painfully slow divergences, and numbers we will never see." -->
+---
+title: "How large do numbers get, really?"
+---
 
-## 1. Intro
+As I am finally starting my maths blog, I thought it would be fitting for the first post to be on one of the first things that triggered my mathematical curiosity in my younger years: *large* numbers (and no, I will not be talking about the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers) today, although it will eventually make an appearance on this blog with probability close to 1). More specifically, I want to try to give a somewhat satisfying answer to the following question: *how large can numbers get?* Most of the following discussion will be mostly elementary and not rely on mathematical concepts beyond the high school level, I therefore hope this will be accessible to most curious (and mathematically-inclined) readers!
+
+
+## 1. The Harmonic Series
+
+There are many ways one might be led to think about concepts like *infinity* and large numbers. For me, one of the most striking such way is the divergence of the [Harmonic Series](https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)), to which I was introduced as a first-year *classe prépa* student. Let's first explain what the Harmonic Series is: consider the (infinite) sequence of inverses of natural numbers, i.e. $1, 1/2, 1/3, 1/4,\ldots$ and so on. Note that these values are decreasing and get closer and closer to zero as we keep going further in the sequence (for instance $1/10 = 0.1 \le 1/100 = 0.01 \le 1/10000= 0.0001$ and so on...). Now let $N$ be a large natural number (say, $N= 9999999$ if you like), and denote the *partial sum* of the Harmonic Series as follows:
+$$H_N\equiv \sum_{n=1}^N \frac1n := 1 + \frac12 + \frac 13 + \cdots + \frac1N, \tag1 $$
+the left-hand side of $(1)$ is a [conveniently shorter notation](https://en.wikipedia.org/wiki/Summation#Capital-sigma_notation) for its right-hand side.  
+
+So the partial sum of the Harmonic Series is just the sum of the $N$ first inverse natural numbers. Now, what we call the Harmonic Series is the limit of the sum $(1)$ above, as we let $N$ increase to infinity. That is, it is the sum of *all* the inverse natural numbers. Mathematically, we denote it as follows:
+$$\lim_{N\to\infty} \sum_{n=1}^N \frac1n \equiv\sum_{n=1}^\infty \frac1n \equiv 1 + \frac12 + \frac 13  + \frac 14 \cdots. \tag2  $$
+
+Now, what is quite remarkable about the above quantity, is that although it is a sum of tiny numbers which are getting closer and closer to $0$, the sum value is actually *infinite*. That is, for any number $M$ you can imagine, you can always find a number $N$ of terms such that $H_N$ is larger than your $M$ of choice. This is what we mean when we say that the Harmonic series *diverges*. This was an absolute shock to me upon learning this for the first time, *"how could tiny numbers possibly add up to any arbitrarily large quantity?"* was my reaction. Perhaps you don't find this particularly shocking, since we're adding up an infinite number of terms after all, but to convince you that it is not such an obvious fact, consider the sequence of inverse powers of two, i.e. $1/2, 1/4, 1/8, 1/16, 1/32 \ldots$ and so on. Now consider the associated *geometric series*:
+$$S := \sum_{n=1}^\infty \frac{1}{2^n} = \frac12 + \frac 14 + \frac18+ \frac{1}{16} + \cdots. $$
+
+Here again, the sequence of inverse powers of two is monotonically decreasing towards zero, and although we're adding infinitely many terms, we can show that the sum $S$ does *not* get arbitrarily large as we keep adding more and more terms (in fact, we can show that the sum gets closer and closer to $1$ as we keep adding terms, see [this Wikipedia page](https://en.wikipedia.org/wiki/Geometric_series) for details). 
+
+So then, how do we make sense of the divergence of the Harmonic Series, and how can we even see that the series diverges? There is actually [quite](https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)#Comparison_test) [a number](https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)#Integral_test) [of ways](https://proofwiki.org/wiki/Harmonic_Series_is_Divergent) [one can](https://math.stackexchange.com/questions/255/why-does-the-series-sum-n-1-infty-frac1n-not-converge) [prove](https://scipp-legacy.pbsci.ucsc.edu/~haber/ph116A/harmapa.pdf) that the series diverges, but a standard proof which achieves both aims at once is obtained by noting that the function $x\mapsto 1/x$ is monotone decreasing on the interval $[1,\infty)$, which gives the lower bound (see [here](https://math.stackexchange.com/a/3207608/857384) for details)
+$$H_N \ge \int_1^{N+1} \frac{dx}{x} \ge \log N, \tag3 $$
+where $\log$ denotes the [natural logarithm](https://en.wikipedia.org/wiki/Natural_logarithm). Hence from Equation $(3)$ we can see that $H_N$ grows like the logarithm of $N$, which indeed grows unboundedly with $N$. Better yet, by the same argument used to obtain $(3)$, we can show that $H_N \le \log N + \gamma $, where $\gamma > 0$ is a [constant](https://en.wikipedia.org/wiki/Euler's_constant) independent of $N$. So now, we know that the Harmonic series diverges, and it does so at a logarithmic speed. We can thus answer the question: for a given number $M$, how many terms $N$ do we need in the sum $H_N$ for it to be larger than $M$? Well, since we've shown that $H_N \approx \log N$, it follows that we can take $N$ such that $ \log N \ge M$ to reach our desired target $M$, which after applying the [exponential](https://en.wikipedia.org/wiki/Exponential_function), tells us that roughly $N\approx \exp(M)$ terms are enough to get $H_N \ge M$.
+
+## 2. Astronomically large numbers
 
 - Contexte perso
   - Une des premières choses qui t’ont fasciné quand tu as commencé les maths (en prépa, *ahlala…*).
