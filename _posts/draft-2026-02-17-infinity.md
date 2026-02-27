@@ -29,11 +29,11 @@ Now that we have some quantitative understanding of why and how the harmonic ser
 
 ### Mining some "harmonic bitcoin"
 
-Let's do a thought experiment. Imagine we're mining a virtual currency, akin to bitcoin, which works as follows: for every unit of computational resource we use, we are able to compute an additional term of the harmonic series, and we get paid in (Hong Kong) dollars the total sum we have been able to compute. In words, if we have $N=10$ units of computational resources, we can compute the harmonic series up to $1 + 1/2 + \ldots + 1/10 $, and we thus get paid $1 + 1/2 + \ldots + 1/10 \approx 3$ HK\$ for this computational work. Now, how much computational resources would we need to earn 200HK\$ this way? Well, as we've seen in the previous section, it takes roughly $N\approx\exp(200)$ terms for the first $N$ terms of the harmonic series to be larger than $200$. So we would need approximately $N = 7\times 10^86$ (that's a seven with *86 zeroes* after it) units of computational resources to earn 200 dollars! For the record, experts estimate that [the number of atoms in the observable universe is around $10^80$](https://en.wikipedia.org/wiki/Observable_universe#Matter_content%E2%80%94number_of_atoms). Said differently, this means that even if we could magically turn *every single atom of the universe* into a computational unit solely dedicated to our harmonic bitcoin mining objective, we would still need about *a million copies* of the universe to earn 200 dollars!
+Let's do a thought experiment. Imagine we're mining a virtual currency, akin to bitcoin, which works as follows: for every unit of computational resource we use, we are able to compute an additional term of the harmonic series, and we get paid in (Hong Kong) dollars the total sum we have been able to compute. In words, if we have $N=10$ units of computational resources, we can compute the harmonic series up to $1 + 1/2 + \ldots + 1/10 $, and we thus get paid $1 + 1/2 + \ldots + 1/10 \approx 3$ HK\$ for this computational work. Now, how much computational resources would we need to earn 200HK\$ this way? Well, as we've seen in the previous section, it takes roughly $N\approx\exp(200)$ terms for the first $N$ terms of the harmonic series to be larger than $200$. So we would need approximately $N = 7\times 10^{86}$ (that's a seven with *86 zeroes* after it) units of computational resources to earn 200 dollars! For the record, experts estimate that [the number of atoms in the observable universe is around $10^{80}$](https://en.wikipedia.org/wiki/Observable_universe#Matter_content%E2%80%94number_of_atoms). Said differently, this means that even if we could magically turn *every single atom of the universe* into a computational unit solely dedicated to our harmonic bitcoin mining objective, we would still need about *a million copies* of the universe to earn 200 dollars!
 
 ### Saving up on a mortgage 
 
-Another amusing thought experiment which conveys the same idea is the following: we start a timer at time $T_0=0s$, and every second after that, an amount $1/j$ $ is deposited to our bank account by a (kind, wealthy, and immortal) stranger, where $j$ is the current second. Said differently, at time $T=1s$, we receive 1\$, at time $T=2s$, we receive 1/2\$, and so on, such that after $N$ seconds, our bank account has received $H_N \approx \log N$ HK\$. How long do we need to wait to have received 10\$, 20\$, or \50$? Running the same computations as before, we find that it would take respectively $2.2\times 10^4s\approx$ 6 hours to earn 10\$, $4.8\times 10^8s\approx$ 15 *years* to earn 20\$, and $5.2\times 10^21s\approx 1.6 \times 10^14$ *years* to earn 50\$. For the record, this last one is about [*ten thousand times* greater than the age of the universe](https://81018.com/universeclock/). So yeah, we're not buying a house anytime soon.
+Another amusing thought experiment which conveys the same idea is the following: we start a timer at time $T_0=0s$, and every second after that, an amount $1/j$ $ is deposited to our bank account by a (kind, wealthy, and immortal) stranger, where $j$ is the current second. Said differently, at time $T=1s$, we receive 1\$, at time $T=2s$, we receive 1/2\$, and so on, such that after $N$ seconds, our bank account has received $H_N \approx \log N$ HK\$. How long do we need to wait to have received 10\$, 20\$, or 50\$? Running the same computations as before, we find that it would take respectively $2.2\times 10^4s\approx$ 6 hours to earn 10\$, $4.8\times 10^8s\approx$ 15 *years* to earn 20\$, and $5.2\times 10^{21}s\approx 1.6 \times 10^{14}$ *years* to earn 50\$. For the record, this last one is about [*ten thousand times* greater than the age of the universe](https://81018.com/universeclock/). So yeah, safe to say we're not buying a house anytime soon.
 
 ### Ubiquity of large numbers in mathematics
 
@@ -42,89 +42,14 @@ Thought experiments like the two above (and many more variants) explain why the 
 - The function $x\mapsto\log\log x$ famously appears in [the law of the iterated logarithm](https://en.wikipedia.org/wiki/Law_of_the_iterated_logarithm) which quantifies the fluctuations of a scaled random walk. 
 - The [Moment Generating Function](https://en.wikipedia.org/wiki/Moment-generating_function) of a Poisson random variable with parameter $\lambda > 0$ is given by the function $f:t\mapsto e^{\lambda(\exp(t) - 1)}$. That is *exponentially faster* growth than the function $\exp$!
 
-And these examples do not even remotely scratch the surface of the
+These examples do not even remotely scratch the surface of the world fast/slowly growing functions with which researchers in [combinatorial graph theory](https://en.wikipedia.org/wiki/Ramsey_theory), [computability theory](https://en.wikipedia.org/wiki/Computability_theory) and various aspects of [theoretical computer science](https://en.wikipedia.org/wiki/Theoretical_computer_science) work with daily.
 ---
 
-## 2. How to “reconcile” this fact with my intuition?  
-### A “hard threshold” on the computations we can do
+## 3. So... do large numbers really mean anything?
 
-- Point 1 : la borne inférieure logarithmique \(\Rightarrow\) divergence « indéniable »
-  - Rappeler : si
-    \[
-    H_N \ge \ln N + \text{(constante)},
-    \]
-    alors comme \(\ln N \to \infty\), la série diverge.
-  - Souligner le lien \(\ln\) / \(\exp\) :
-    - \(\ln N \to \infty\) équivaut au fait que \(\exp(M)\) peut atteindre des valeurs aussi grandes qu’on veut quand \(M\) croît.
-    - L’exponentielle \(\exp\) a une croissance « indéniable », évidente, même pour l’intuition.
-    - Donc, via cette borne logarithmique, la divergence de la série harmonique devient *mathématiquement* évidente, même si elle reste *intuitivement* bizarre.
-- Point 2 : regarder la question « à l’envers »  
-  **Combien de termes faut-il pour atteindre une valeur donnée \(M\) ?**
-  - Utiliser l’approximation/comparaison avec le logarithme :
-    - On cherche \(N\) tel que :
-      \[
-      H_N \approx \ln N \approx M.
-      \]
-    - Donc :
-      \[
-      N \approx e^M.
-      \]
-  - Exemple \(M = 100\) :
-    - En première approximation, il « faut » \(N \approx e^{100}\) termes.
-    - Idée à faire passer : ce \(N\) est « incroyablement grand ».
-    - Comparaison souhaitée dans ton brouillon :
-      - **Idée** : dire que \(e^{100}\) est plus grand que le nombre estimé de particules dans l’univers observable.
-      - **NOTE pour toi** : vérification numérique :
-        - \(e^{100} \approx 3.7 \times 10^{43}\),
-        - estimations usuelles pour le nombre de particules dans l’univers observable : \(\sim 10^{80}\)–\(10^{90}\).
-        - Donc \(e^{100}\) est *beaucoup plus petit* que \(10^{80}\).
-      - Suggestion (à décider toi-même) :
-        - soit garder \(M = 100\) et comparer à autre chose,
-        - soit prendre un \(M\) plus grand (par ex. \(M \approx 200\)) pour avoir \(e^M\) réellement plus grand que \(10^{80}\).
-  - Scénario 1 : assigner chaque terme à une particule de l’univers
-    - Idée exacte de ton brouillon :
-      - « si on assignait à chaque particule numéro \(j\) de l’univers le calcul du \(j\)-ème terme de la somme et qu’on sommait le tout, on atteindrait même pas 100 ».
-    - À détailler :
-      - Nombre estimé de particules : \(\sim 10^{80}\) (ordre de grandeur).
-      - On calcule et additionne \(\sum_{j=1}^{10^{80}} \frac{1}{j}\).
-      - Valeur approchée via le log :
-        \[
-        H_{10^{80}} \approx \ln(10^{80}) + \gamma \approx 80 \ln 10 + \gamma \approx 80 \times 2.3026 \approx 184.
-        \]
-      - **NOTE** : du coup, avec \(10^{80}\) particules on dépasse déjà 100 (on arrive vers ~184).
-      - Tu peux :
-        - soit ajuster la valeur cible \(M\),
-        - soit ajuster le nombre de particules / l’ordre de grandeur pour garder l’effet « wow » comme tu le souhaites.
-  - Scénario 2 : ajouter un terme toutes les nanosecondes
-    - Idée de ton brouillon :
-      - « si on ajoutait le \(j\)-ème terme à la somme toutes les nano-secondes, il faudrait des milliards de milliards de milliards de fois l'âge de l'univers pour atteindre 100 ».
-    - À faire :
-      - Donner un ordre de grandeur de l’âge de l’univers en secondes puis en nanosecondes.
-      - Calculer le nombre de termes ajoutés en « un âge de l’univers » au rythme d’un terme par nanoseconde.
-      - Approximer la valeur de \(H_N\) correspondante via \(\ln N\).
-      - Comparer cette valeur à la cible voulue (par ex. \(M = 100\)).
-      - Conclure : même après tout ce temps, on est très en-dessous / on ne l’atteint pas.
-  - Scénario 3 : combiner les deux idées
-    - Idée de ton brouillon :
-      - « on peut combiner les autres en faisant la somme des \(j\) à \(j+10^{80}\) termes de la somme toutes les secondes et regarder la valeur de la somme qu'on atteint après avoir attendu l'âge de l'univers ».
-    - Plan :
-      - Chaque seconde, tu ajoutes un « bloc » de \(10^{80}\) termes supplémentaires.
-      - Tu fais ça pendant un nombre de secondes comparable à l’âge de l’univers.
-      - Tu estimes combien de termes au total ont été ajoutés (ordre de grandeur).
-      - Tu utilises encore l’approximation logarithmique pour \(H_N\).
-      - Objectif : montrer que même en « exploitant » à fond les ressources de l’univers (en caricaturant), tu n’atteins pas des valeurs si grandes que ça pour \(H_N\) (ou en tout cas, que ça reste « raisonnable » par rapport aux cibles \(M\) que tu choisis).
-- Message de fond de cette section
-  - La divergence de la série harmonique est un phénomène **purement mathématique / abstrait**.
-  - Elle n’est pas « physiquement observable » dans aucun scénario réaliste dans notre univers.
-  - C’est ce décalage entre monde mathématique (où on peut aller jusqu’à \(N \approx e^{100}\), \(e^{1000}\), etc.) et monde physique (où même \(N \approx 10^{80}\) est un plafond dur) qui rend le résultat contre-intuitif.
-  - Tu peux ajouter d’autres exemples « astronomiques » si tu veux :
-    - temps nécessaire pour juste *écrire* un nombre comme \(e^{1000}\) en base 10,
-    - limites de stockage d’information dans l’univers observable,
-    - etc.
+It appears that we have found ourselves in some kind of paradox: on the one hand, quantities like $\exp\exp(100)$, [TREE(3)](https://en.wikipedia.org/wiki/Kruskal's_tree_theorem) or [Graham's number](https://en.wikipedia.org/wiki/Graham's_number) are so ridiculously large that there is no realistic way to comprehend them or to make any kind of physical sense out of them, on the other hand such quantities seemingly appear in a number of problems (distribution of primes, deviations of stochastic processes, expected times for rare events, complexity of algorithms, rates of convergence...) and help us understand our world. How do we make sense of this?
 
----
 
-## 3. So… should we reject large numbers?
 
 - Lien avec l’**ultra-finitisme**
   - Transition :
@@ -234,17 +159,3 @@ And these examples do not even remotely scratch the surface of the
     - pour les lecteurs qui voudraient aller plus loin côté philosophie.
 
 ---
-
-<!-- Optionnel : petite conclusion générale du billet -->
-
-## (Optional) Closing thoughts
-
-- Rappeler en une ou deux phrases :
-  - que la série harmonique diverge, mais d’une manière tellement lente qu’on ne la « voit » jamais,
-  - que les nombres gigantesques apparaissent naturellement en maths (bien plus grands que tout ce qu’on peut physiquement manipuler),
-  - que la perspective probabiliste te permet de garder ces objets mathématiques tout en respectant l’intuition « physique » que notre univers est très finiment limité.
-- Remerciements / appel à commentaires :
-  - inviter les lecteurs à proposer :
-    - d’autres exemples de séries « à divergence lente »,
-    - des ressources sur les grands nombres,
-    - des points de vue philosophiques sur l’ultra-finitisme, etc.```
