@@ -17,8 +17,6 @@ permalink: /publications/
 - **Super-fast rates of convergence for Neural Networks Classifiers under the Hard Margin Condition (2026)**  
   N. Tepakbong, *X. Zhou, D.-X. Zhou*, 2025. Under review at TMLR: [openreview link](https://openreview.net/forum?id=HXun3l0Feu).
 
-## Published papers
-
 - **Initialization of the Circulant Embedding method to speed up the generation of Gaussian random fields (2022)**  
   *G. Pichot, S. Legrand, M. Kern*, N. Tepakbong  
   *The SMAI Journal of computational mathematics*, Volume 8 (2022), pp. 327-347: [journal link](https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.89/).
