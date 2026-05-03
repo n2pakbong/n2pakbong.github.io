@@ -15,7 +15,7 @@ permalink: /publications/
   N. Tepakbong, *H. Hu, C. Liu, X. Zhou*. Accepted for publication at ICML 2026: [openreview link](https://openreview.net/forum?id=yd4tq9Rf3L).
 
 - **Super-fast rates of convergence for Neural Networks Classifiers under the Hard Margin Condition (2026)**  
-  N. Tepakbong, *X. Zhou, D.-X. Zhou*, 2025. Under review at TMLR: [openreview link](https://openreview.net/forum?id=HXun3l0Feu).
+  N. Tepakbong, *X. Zhou, D.-X. Zhou*. Under review at TMLR: [openreview link](https://openreview.net/forum?id=HXun3l0Feu).
 
 - **Initialization of the Circulant Embedding method to speed up the generation of Gaussian random fields (2022)**  
   *G. Pichot, S. Legrand, M. Kern*, N. Tepakbong  
