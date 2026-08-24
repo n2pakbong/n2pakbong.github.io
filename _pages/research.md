@@ -30,5 +30,5 @@ I am mostly interested in [Statistical Learning Theory](https://en.wikipedia.org
 - **Statistical Learning Theory for Provably Accurate and Efficient Scientific Machine Learning Algorithms (2026)**  
 N. Tepakbong. PhD Thesis. Department of Data Science, City University of Hong Kong. [Link]({{ site.baseurl }}/assets/documents/thesis.pdf)
 
-- **Some Theory of Functional Data Classification with Shallow FeedForward Neural Networks (2021)**
+- **Some Theory of Functional Data Classification with Shallow FeedForward Neural Networks (2021)**  
   N. Tepakbong. Master's Thesis. University of Toulouse and ISAE-Supaéro.
