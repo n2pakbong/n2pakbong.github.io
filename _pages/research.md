@@ -6,7 +6,7 @@ permalink: /research/
 
 ## Research interests
 
-I am mostly interested in [Statistical Learning Theory](https://en.wikipedia.org/wiki/Statistical_learning_theory) and applying it to obtain mathematical guarantees (convergence rates, error bounds...) for Machine Learning-based solutions of PDEs arising from the study of rare events, such as computation of [equilibrium distributions](https://en.wikipedia.org/wiki/Fokker%E2%80%93Planck_equation), [first exit times](https://en.wikipedia.org/wiki/Narrow_escape_problem) or [committor functions](https://link.springer.com/article/10.1007/s10955-005-9003-9). These types of problems often come with a lot of mathematical structure, which in turn can be exploited to design algorithms with remarkably improved guarantees.
+I am mostly interested in [Statistical Learning Theory](https://en.wikipedia.org/wiki/Statistical_learning_theory) and applying it to obtain mathematical guarantees (convergence rates, error bounds...) for Machine Learning-based solutions of PDEs arising from the study of rare events, such as computation of [equilibrium distributions](https://en.wikipedia.org/wiki/Fokker%E2%80%93Planck_equation), [first exit times](https://en.wikipedia.org/wiki/Narrow_escape_problem) or [committor functions](https://link.springer.com/article/10.1007/s10955-005-9003-9). These types of problems often come with a lot of mathematical structure, which in turn can be exploited to design algorithms with improved guarantees when compared to baselines.
 
 
 
@@ -27,7 +27,7 @@ I am mostly interested in [Statistical Learning Theory](https://en.wikipedia.org
 
 ## Theses
 
-- **Statistical Learning Theory for Provably Accurate and Efficient Scientific Machine Learning Algorithms (2026)** 
+- **Statistical Learning Theory for Provably Accurate and Efficient Scientific Machine Learning Algorithms (2026)**  
 N. Tepakbong. PhD Thesis. Department of Data Science, City University of Hong Kong. [Link]({{ site.baseurl }}/assets/documents/thesis.pdf)
 
-- **Some Theory of Functional Data Classification with Shallow FeedForward Neural Networks** N. Tepakbong. Master's Thesis.
+- **Some Theory of Functional Data Classification with Shallow FeedForward Neural Networks (2021)** N. Tepakbong. Master's Thesis. University of Toulouse and ISAE-Supaéro
