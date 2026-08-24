@@ -17,7 +17,6 @@ minima:
     - _pages/research.md
     - _pages/publications.md
     - _pages/teaching.md
-    - _pages/cv.md
     - _pages/blog.md
   hide_site_feed_link: true
 
