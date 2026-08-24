@@ -1,4 +1,7 @@
-## Importance sampling on path space with Girsanov theorem
+---
+title: "Importance sampling on path space with Girsanov theorem"
+published: false
+---
 
 
 
