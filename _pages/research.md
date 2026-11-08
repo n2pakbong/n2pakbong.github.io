@@ -6,11 +6,7 @@ permalink: /research/
 
 ## Research interests
 
-I use statistical learning theory to understand when machine learning algorithms work and how to make them more reliable. My PhD research developed convergence rates for neural network classification and error bounds for physics-informed neural networks solving PDEs, including problems motivated by rare-event computation. I am now broadening this learning-theoretic work toward the mathematical foundations of AI, particularly sampling and particle-based methods.
-
-## Current project
-
-With Yu Cao and Xiang Zhou, I am studying sampling through kernelized stationary equations. Our work examines when a kernel-based discrepancy identifies a target distribution, how it relates to Stein particle methods, and what convergence guarantees can be established for the resulting algorithms. The manuscript, *A Unifying Perspective on Sampling through Kernelized Stationary Equations*, is in preparation.
+I am mostly interested in [Statistical Learning Theory](https://en.wikipedia.org/wiki/Statistical_learning_theory) and applying it to obtain mathematical guarantees (convergence rates, error bounds...) for [Scientific Machine Learning](https://sites.brown.edu/bergen-lab/research/what-is-sciml/) algorithms. I am specifically interested in better understanding and designing Machine Learning-based solvers for problems arising from the study of rare events, such as sampling from [equilibrium distributions](https://en.wikipedia.org/wiki/Fokker%E2%80%93Planck_equation), estimation of [first exit times](https://en.wikipedia.org/wiki/Narrow_escape_problem) or reliable computation of [committor functions](https://link.springer.com/article/10.1007/s10955-005-9003-9). These types of problems typically come with a lot of mathematical structure, which in turn can be exploited to design algorithms which perform much better than baselines. I am also interested in the applications of Statistical Learning Theory to the understanding and design of modern AI algorithms, such as LLMs and Diffusion Models.
 
 ## Publications and manuscripts
 
